@@ -1,0 +1,53 @@
+<head>
+    <style> body { margin: 0; } </style>
+  
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone"></script>
+  
+    <script src="https://unpkg.com/three"></script>
+  
+    <script src="https://unpkg.com/react-globe.gl"></script>
+  <!--  <script src="../../dist/react-globe.gl.js"></script>-->
+  </head>
+  
+  <body>
+    <div id="globeViz"></div>
+  
+    <script type="text/jsx">
+      const { useEffect, useRef } = React;
+  
+      // custom globe material
+      const globeMaterial = new THREE.MeshPhongMaterial();
+      globeMaterial.bumpScale = 10;
+      new THREE.TextureLoader().load('https:////unpkg.com/three-globe/example/img/earth-water.png', texture => {
+        globeMaterial.specularMap = texture;
+        globeMaterial.specular = new THREE.Color('grey');
+        globeMaterial.shininess = 15;
+      });
+  
+      const World = () => {
+        const globeEl = useRef();
+  
+        useEffect(() => {
+          setTimeout(() => { // wait for scene to be populated (asynchronously)
+            const directionalLight = globeEl.current.scene().children.find(obj3d => obj3d.type === 'DirectionalLight');
+            directionalLight && directionalLight.position.set(1, 1, 1); // change light position to see the specularMap's effect
+          });
+        }, []);
+  
+        return <Globe
+          ref={globeEl}
+          globeMaterial={globeMaterial}
+          globeImageUrl="https://object-arbutus.cloud.computecanada.ca/bq-io/io/gbif-heatmaps/all_gbif_hr.jpeg"
+          bumpImageUrl="https:////unpkg.com/three-globe/example/img/earth-topology.png"
+          backgroundImageUrl="https:////unpkg.com/three-globe/example/img/night-sky.png"
+        />;
+      };
+  
+      ReactDOM.render(
+        <World />,
+        document.getElementById('globeViz')
+      );
+    </script>
+  </body>
