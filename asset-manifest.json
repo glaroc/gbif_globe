@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://glaroc.github.io/gbif_globe/static/css/main.073c9b0a.css",
+    "main.js": "https://glaroc.github.io/gbif_globe/static/js/main.034362cf.js",
+    "static/js/787.e97c5399.chunk.js": "https://glaroc.github.io/gbif_globe/static/js/787.e97c5399.chunk.js",
+    "index.html": "https://glaroc.github.io/gbif_globe/index.html",
+    "main.073c9b0a.css.map": "https://glaroc.github.io/gbif_globe/static/css/main.073c9b0a.css.map",
+    "main.034362cf.js.map": "https://glaroc.github.io/gbif_globe/static/js/main.034362cf.js.map",
+    "787.e97c5399.chunk.js.map": "https://glaroc.github.io/gbif_globe/static/js/787.e97c5399.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.034362cf.js"
+  ]
+}
