@@ -1,14 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <div style={{position:'absolute',bottom:"5px",right:'20px',color:'white',zIndex:999,fontSize:'14px'}}>All GBIF data occurrences at 1km resolution as of April 2022. <a style={{color:'white'}} href="https://doi.org/10.15468/dl.r5by8t" target="_blank"> https://doi.org/10.15468/dl.r5by8t</a></div>
+    <div
+      style={{
+        position: "absolute",
+        bottom: "5px",
+        right: "20px",
+        color: "white",
+        zIndex: 999,
+        fontSize: "14px",
+      }}
+    >
+      All GBIF data occurrences at 1km resolution as of May 2024.{" "}
+      <a
+        style={{ color: "white" }}
+        href="https://doi.org/10.15468/dl.ubwn8z"
+        target="_blank"
+      >
+        {" "}
+        https://doi.org/10.15468/dl.ubwn8z
+      </a>
+    </div>
   </React.StrictMode>
 );
 
