@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://glaroc.github.io/gbif_globe/static/css/main.a137bff9.css",
-    "main.js": "https://glaroc.github.io/gbif_globe/static/js/main.2c7c2573.js",
+    "main.css": "https://glaroc.github.io/gbif_globe/static/css/main.8908baab.css",
+    "main.js": "https://glaroc.github.io/gbif_globe/static/js/main.c0625eb9.js",
     "static/js/787.e97c5399.chunk.js": "https://glaroc.github.io/gbif_globe/static/js/787.e97c5399.chunk.js",
     "index.html": "https://glaroc.github.io/gbif_globe/index.html",
-    "main.a137bff9.css.map": "https://glaroc.github.io/gbif_globe/static/css/main.a137bff9.css.map",
-    "main.2c7c2573.js.map": "https://glaroc.github.io/gbif_globe/static/js/main.2c7c2573.js.map",
+    "main.8908baab.css.map": "https://glaroc.github.io/gbif_globe/static/css/main.8908baab.css.map",
+    "main.c0625eb9.js.map": "https://glaroc.github.io/gbif_globe/static/js/main.c0625eb9.js.map",
     "787.e97c5399.chunk.js.map": "https://glaroc.github.io/gbif_globe/static/js/787.e97c5399.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a137bff9.css",
-    "static/js/main.2c7c2573.js"
+    "static/css/main.8908baab.css",
+    "static/js/main.c0625eb9.js"
   ]
 }
