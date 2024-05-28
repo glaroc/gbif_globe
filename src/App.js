@@ -63,7 +63,8 @@ function App() {
         ref={globeEl}
         globeMaterial={globeMaterial}
         globeImageUrl={`https://object-arbutus.cloud.computecanada.ca/bq-io/io/gbif-heatmaps/${taxa}_gbif-2024-05.jpeg`}
-        bumpImageUrl={`https://object-arbutus.cloud.computecanada.ca/bq-io/io/gbif-heatmaps/earth-topology.jpg#${taxa}`}
+        //bumpImageUrl={`https://object-arbutus.cloud.computecanada.ca/bq-io/io/gbif-heatmaps/earth-topology.jpg#${taxa}`}
+        bumpImageUrl={`https://object-arbutus.cloud.computecanada.ca/bq-io/io/gbif-heatmaps/elevation_1KMmn_GMTEDmn2.jpg#${taxa}`}
         backgroundImageUrl="https:////unpkg.com/three-globe/example/img/night-sky.png"
       />
       <SideNav
